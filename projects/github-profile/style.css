@@ -1,0 +1,64 @@
+.container {
+    max-width:300px;
+    margin:auto;
+    background-color:var(--profile-bg);
+    padding:1.2em;
+    object-fit:cover;
+    
+
+}
+
+:root {
+    --font-main: 'Noto Sans', sans-sarif;
+    --main-bg: #000;
+    --profile-bg: #0d1117;
+    --profile-color: #c9d1d9;
+    --profile-img-border:#2e343b;
+    --username-font-color: #8b949e;
+    --username-font-weight: 400;
+    --btn-tag: #21262d;
+    --btn-color: #c9d1d9;
+    --btn-bg-hover: #30363d;
+    --btn-border: #373b43;
+    --btn-border-hover: #8c949e
+
+}
+
+.profile img {
+    max-width:100%;
+     border-radius:200px;
+}
+
+
+.container h1{
+    margin:0;
+    font-family: var(--font-main);
+    color:white;
+}
+
+#host {
+    color: rgb(118, 113, 113);
+    margin-bottom: 10px;
+    margin-top:0
+}
+
+#caption {
+    color: white;
+}
+
+.container button {
+   width:100%;
+   border: solid var(--btn-border);
+   background: var(--btn-tag);
+   color: var(--btn-color);
+   border-radius:5px
+   
+}
+
+.container .profile-content {
+    padding: 1em
+}
+
+.container button:hover {
+    background-color:var(--btn-bg-hover)
+}

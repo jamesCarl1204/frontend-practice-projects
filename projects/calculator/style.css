@@ -1,0 +1,25 @@
+div {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    padding: 100px;
+    position: relative;
+    top:250px;
+    margin:auto;
+     display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    gap: 20px;
+    justify-content: center;
+
+    grid-template-areas: 
+    "input input input input"
+
+}
+
+div button {
+    background-color:white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

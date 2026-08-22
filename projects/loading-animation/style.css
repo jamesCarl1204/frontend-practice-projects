@@ -1,0 +1,46 @@
+.container .load {
+    display: flex;
+    gap: 10px;
+    width:auto;
+    height: 90vh;
+    justify-content:center;
+    align-items: center 
+}
+.container div {
+    width:80px;
+    height: 80px;
+    border-radius:100px;
+}
+
+.div1 {
+    background-color: gray;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+.div2 {
+    animation-name: myanimation2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: gray
+}
+.div3 {
+    background-color: gray;
+    animation-name: myanimation3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes myanimation {
+    0% {background-color:gray}
+    25% {background-color: blue}
+}
+@keyframes myanimation2 {
+    50% {background-color:gray}
+    75% {background-color: blue}
+}
+@keyframes myanimation3 {
+    90% {background-color:gray}
+    100% {background-color: blue}
+}
+
+

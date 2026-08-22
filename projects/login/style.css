@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+      font-family: 'DM Sans', -apple-system, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      color: var(--ink);
+}
+:root {
+  --navy-deep: #0b1631;
+  --navy: #122349;
+  --blue-royal: #122349;
+  --blue-bright: #122349;
+  --blue-sky: #7db3ff;
+  --gold: #f2b134;
+  --ink: #0f1f4b;
+  --slate: #64748b;
+  --bg-soft: #f8fafc;
+  --white: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.details{
+    width:50%;
+    height: 100vh;
+    background-color: var(--navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding:20px
+}
+
+.details p {
+    color: var(--gold)
+}
+
+.wrap {
+
+    width:500px
+}
+.login{
+   width: 50%;
+   height: 100vh;
+   display: flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+    gap:80px
+}
+
+.wrap {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:100px
+}
+
+
+.teacher-logo, .student-logo {
+    font-family: 'DM Sans', -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.teacher-login, .student-login {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+     background-color: aqua;
+    padding:50px;
+    border-radius: 30px;
+    box-shadow: 15px 5px 15px 
+}
+
+.teacher-login:hover {
+    transform:scale(0.9)
+}
+
+.student-login:hover {
+    transform: scale(0.9)
+}
+
+
+
+
+
+
+

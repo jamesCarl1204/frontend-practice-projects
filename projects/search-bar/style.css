@@ -1,0 +1,16 @@
+div{
+    padding: 20px
+    
+}
+
+div input {
+    padding: 20px;
+    width: 100px;
+    transition: width 1s
+}
+
+
+
+div input:focus{
+    width: 500px
+}

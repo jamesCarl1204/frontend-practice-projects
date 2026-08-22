@@ -1,0 +1,111 @@
+body {
+    margin:0;
+}
+.container {
+   background-image: url(netflix-bg.png);
+   height:90vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   display:flex;
+   flex-direction: column
+}
+
+.nav-container {
+    width:100%;
+}
+.nav-container ul {
+    list-style-type:none;
+     display:flex;
+     justify-content: end;
+     margin:0;
+     gap:10px;
+     padding: 20px
+}
+
+#logo p {
+   margin:0;
+   float: left;
+   font-size: 1.4rem;
+   color: red;
+   padding: 20px
+}
+
+#sign-btn button {
+    background-color: red;
+    padding:5px;
+    color:white;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+#lang-btn {
+    padding:5px;
+    border:solid white;
+    font-size: 1.4rem;
+    color:white
+}
+
+.hero {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.details {
+   color:white;
+   text-align:center;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+.form input, .form button {
+    padding:10px;
+}
+.form button {
+    background: red;
+    color: white;
+}
+
+.container2 {
+   background-color: black;
+   height: 90vh;
+   padding: 0;
+   display: flex;
+   justify-content:space-around
+}
+
+.movies {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+   
+}
+
+.movie {
+    background-color: rgb(16, 16, 59);
+    width:300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px
+}
+
+.movie button{
+   width: 200px;
+   background-color: transparent;
+   color: white;
+}
+
+
+
+
+
