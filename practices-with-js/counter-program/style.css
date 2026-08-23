@@ -1,0 +1,19 @@
+#countLabel {
+     font-size:8.4rem;
+     display: block;
+     text-align: center
+}
+ 
+
+#btnContainer {
+    display: flex;
+    justify-content: center
+}
+#btnContainer button {
+    padding: 30px;
+    background-color: navy;
+    color: white;
+    font-size: 4rem
+   
+
+}
