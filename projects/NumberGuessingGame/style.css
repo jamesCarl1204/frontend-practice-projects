@@ -1,0 +1,14 @@
+div {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+    margin:auto
+}
+
+
+div input, div button {
+    padding: 10px;
+    
+}
