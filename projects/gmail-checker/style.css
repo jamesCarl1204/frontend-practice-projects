@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.div2 {
+    background-color: rgb(159, 237, 237);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 100px
+}
+
+.div2 input, .div2 button {
+    padding: 12px;
+
+}
+
+.div2 label {
+    font-size: 1.3rem;
+    font-family:helvetica;
+    font-weight: bold
+}
+.div2 button {
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    
+}
+
+
+.div2 p {
+    text-align: center
+}
