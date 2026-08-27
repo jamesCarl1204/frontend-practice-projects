@@ -1,0 +1,30 @@
+#container {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size:2rem;
+    font-weight: bold
+}
+
+button {
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    padding: 5px
+}
+
+button:hover {
+    background-color: rgb(25, 153, 25)
+}
+button:active{
+     background-color: rgb(25, 153, 25)
+}
+
+input {
+    text-align:center;
+    font-size: 1.3rem
+}
+
+#diceImg {
+    border:1px blue;
+    
+}
