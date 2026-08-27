@@ -1,0 +1,32 @@
+#container{
+    width: 80%;
+    height: 500px;
+    background-color:  rgb(88, 88, 153);
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white
+}
+
+#container #input {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white
+}
+
+#inputNum {
+    padding: 10px 15px;
+    text-align: center
+}
+
+
+
