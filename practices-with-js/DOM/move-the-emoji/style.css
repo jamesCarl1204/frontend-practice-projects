@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    position:relative;
+}
+#emoji {
+    font-size: 4.5rem;
+    position: absolute
+}
+
