@@ -116,7 +116,8 @@ body {
     border-radius: 30px;
     background-color:white;
     box-shadow: 0 5px 5px black;
-  
+    display: flex;
+    flex-direction: column
 }
 
 .join-modal span {
@@ -150,8 +151,8 @@ body {
     grid-column: 2;
     padding:20px;
     display: flex;;
-    justify-content:flex-start;
-    align-items: flex-start;
+    justify-content:center;
+    align-items: center;
     gap:20px;
     flex-wrap: wrap;
     overflow-y:auto;
@@ -212,4 +213,30 @@ body {
 
 #logout-back-btn {
     font-size:1.3rem
+}
+
+#archived-page {
+    text-align: center;
+    display: none
+}
+
+#reader {
+    width: 300px
+}
+
+.scan-container {
+    width:100%;
+    height: 100vh;
+    background:rgb(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 0;
+}
+
+.scan-message {
+    width:400px;
+    height:400px;
+    background-color: aqua
 }

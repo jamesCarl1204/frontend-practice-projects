@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="student.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
 </head>
 <body>
 
@@ -15,7 +16,7 @@
                 <li><button id="join-btn">Join Class</button></li>
                 <li><button id="logout-btn">Log out</button></li>
             </ul>
-        </nav>
+        </nav> 
 
         <div class="sidebar">
             <ul>
@@ -27,19 +28,15 @@
 
         <div id="main">
 
-            <div id="class-box">
-               
-                <div id="class-open-btn">
-                    <span id="open-btn">Open Class</span>
-                </div>
-            </div>
+           <div id="class-page">
+            <h1>No available classes yet</h1>
+           </div>
 
             <div id="archived-page">
                 <div>
                     <h1>No archived class yet</h1>
                 </div>
             </div>
-           
         </div>
 
         <div class="nav-modal" id="nav-modal">
@@ -50,24 +47,29 @@
                <button id="join-class-btn">Join</button>
             </div>
 
-              <div class="logout-modal" id="logout-modal"  >
+            <div class="logout-modal" id="logout-modal"  >
                <h1>are you sure you want to logout?</h1>
                <span id="logout-back-btn">x</span>
 
-               <div id="yes-no-btn">
-               <button id="logout-no-btn">no</button>
-               <button id="logout-yes-btn">yes</button>
-               </div>
-
+                <div id="yes-no-btn">
+                 <button id="logout-no-btn">no</button>
+                 <button id="logout-yes-btn">yes</button>
+              </div>
             </div>
-
         </div>
 
-      
+        <div class="scan-container" id="scan-container">
+          <div class="scan-message">
+             <h1>Scan QR Code</h1>
+             <span id="scan-back-btn">x</span>
+             <div id="reader"></div>
+         </div>
+       </div>
 
     </div>
     
     <script src="student.js"></script>
+   
 </body>
 </html>
 
