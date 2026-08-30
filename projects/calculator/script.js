@@ -1,26 +1,51 @@
-document.getElementById("num1").innerhtml = 1;
-document.getElementById("num2").innerhtml = 1;
-document.getElementById("num3").innerhtml = 1;
-document.getElementById("num4").innerhtml = 1;
-document.getElementById("num5").innerhtml = 1;
-document.getElementById("num6").innerhtml = 1;
-document.getElementById("num7").innerhtml = 1;
-document.getElementById("num8").innerhtml = 1;
-document.getElementById("num9").innerhtml = 1;
-document.getElementById("num10").innerhtml = 1;
-document.getElementById("num1").innerhtml = 1;
 
 
 let n = []
 
 function num(number) {
      
-     document.getElementById("input").value = number
-     n.push(number)
+     document.getElementById("input").value += number
+
+     let lastItem = n[n.length - 1];
+
+     if(n.length > 0 && !isNaN(lastItem)) {
+
+          n[n.length - 1] = lastItem + number
+     } else{
+          n.push(number)
+     }
+}
+
+function operator(op){
+     document.getElementById("input").value += op
+     n.push(op)
+}
+
+function equal(){
+     let total = Number(n[0])
+
+     for(let i = 1; i < n.length; i += 2) {
+          let op = n[i];
+          let nextNum = Number(n[i+1])
+          
+          if(op === "+") {
+               total = total + nextNum;
+          }
+           else  if(op === "-") {
+               total = total - nextNum;
+          } 
+          else if(op === "/") {
+               total = total / nextNum;
+          }
+           else if(op === "x") {
+               total = total * nextNum;
+          }
+     }
      
+     document.getElementById("input").value = total;
+
+     n = [total]
+
 }
 
-function add({number}) {
-    
 
-}
