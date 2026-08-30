@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <nav class="nav-container">
+            <span id="logo"><img src="logo.png"></span>
+            <ul>
+                <li><button id="join-btn">Join Class</button></li>
+                <li><button id="logout-btn">Log out</button></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar">
+            <ul>
+                <li id="classes-btn">Classes</li>
+                <li id="archived-btn">Archived</li>
+                <li id="scan-btn">Scan</li>
+            </ul>
+        </div>
+
+        <div id="main">
+
+            <div id="class-box">
+               
+                <div id="class-open-btn">
+                    <span id="open-btn">Open Class</span>
+                </div>
+            </div>
+
+            <div id="archived-page">
+                <div>
+                    <h1>No archived class yet</h1>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="nav-modal" id="nav-modal">
+            <div class="join-modal" id="join-modal">
+               <h1>Attendace Code</h1>
+               <span id="join-back-btn">x</span>
+               <input>
+               <button id="join-class-btn">Join</button>
+            </div>
+
+              <div class="logout-modal" id="logout-modal"  >
+               <h1>are you sure you want to logout?</h1>
+               <span id="logout-back-btn">x</span>
+
+               <div id="yes-no-btn">
+               <button id="logout-no-btn">no</button>
+               <button id="logout-yes-btn">yes</button>
+               </div>
+
+            </div>
+
+        </div>
+
+      
+
+    </div>
+    
+    <script src="student.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+
+}
+:root {
+  --navy-deep: #0b1631;
+  --navy: #122349;
+  --blue-royal: #122349;
+  --blue-bright: #122349;
+  --blue-sky: #7db3ff;
+  --gold: #f2b134;
+  --ink: #0f1f4b;
+  --slate: #64748b;
+  --bg-soft: #f8fafc;
+  --white: #ffffff;
+}
+
+.main-container {
+    width: 100%;
+    height:100vh;
+    position: relative;
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    overflow:hidden
+}
+
+.nav-container {
+    background-color: var(--navy);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    grid-column:1/3;
+
+}
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding: 20px
+
+}
+
+.nav-container button {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#join-btn {
+    background-color: green;
+    color: white;
+}
+
+#logout-btn {
+    background-color: red;
+    color: white
+}
+
+#logo {
+   
+    margin-left: 40px; 
+}
+
+
+.sidebar {
+    background-color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height:90vh;
+    grid-column: 1
+}
+
+.sidebar ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    color:white;
+    font-size: 1.5rem;  
+    padding: 0;
+    margin: 0
+}
+
+.sidebar li {
+     padding:20px;
+     display: flex;
+     flex-direction: column
+}
+
+.sidebar li:hover {
+    background-color: var(--slate)
+}
+
+.nav-modal {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    display:none;
+    background:rgb(0,0,0,0.5)
+}
+
+.join-modal {
+    border:none;
+    padding: 100px;
+    position:relative;
+    border-radius: 30px;
+    background-color:white;
+    box-shadow: 0 5px 5px black;
+  
+}
+
+.join-modal span {
+    position: absolute;
+    top:50px;
+    right: 50px;
+    font-size: 1.4rem;
+    font-weight: bold
+}
+
+.join-modal button {
+    padding: 10px 25px;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: green;
+    color: white;
+
+}
+
+.join-modal input {
+    padding: 10px 25px;
+    border-radius: 5px
+}
+
+#join-back-btn{
+    cursor: pointer
+}
+
+#main {
+    grid-column: 2;
+    padding:20px;
+    display: flex;;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap:20px;
+    flex-wrap: wrap;
+    overflow-y:auto;
+
+}
+
+#class-box {
+    width:380px;
+    height:300px;
+    background-color:white;
+    border-radius: 5px;
+    position:relative; 
+    box-shadow: 0 5px 5px
+}
+
+#class-open-btn {
+    background-color: green;
+    width: 100%;
+    height: 80px;
+    position:absolute;
+    bottom:0;
+    display:flex;
+    align-items: center;
+}
+
+#open-btn{
+    color: white;
+    padding:10px
+}
+
+.logout-modal {
+    width:300px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position:relative;
+    border-radius: 5px;
+}
+
+#yes-no-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: white
+}
+
+#yes-no-btn button {
+    padding: 10px 30px;
+   
+}
+
+#logout-yes-btn {
+    background-color: green;
+     color:white;
+}
+
+#logout-back-btn {
+    font-size:1.3rem
+}
