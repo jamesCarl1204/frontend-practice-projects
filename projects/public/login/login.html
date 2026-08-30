@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="details">
+            <div>
+        <p class="brand-eyebrow">Regis Marie College</p>
+        <h1 class="brand-title">QR Code&#8209;Based Attendance<br>Monitoring System</h1>
+        <p class="brand-subtext">Real-time attendance tracking for teachers and students, powered by QR codes.</p>
+            </div>
+        </div>
+
+        <div class="login"> 
+            <div class="wrap" id="wrap">
+                <div class="teacher-login" id="teacher-login"> 
+                 <span class="teacher-logo"> Teacher Login</span>
+                 <span>Manage your classes and attendance</span> 
+                </div>
+
+               <div class="student-login" id="student-login">
+                 <span class="student-logo">Student Login</span>
+                 <span>View and scan your attendance</span>
+               </div>
+           </div>
+
+                 <div class="teacher-login-display" id="teacher-login-display">
+                    <form id="teacher-tag">
+                    <p>Teacher Login</p>
+                    <span id="teacher-back"><-Back to Login</span>
+                     <input type="email" placeholder="email">
+                     <input type="password" placeholder="password">
+                     <button id="teacher-login-btn" type="submit">Login</button> 
+                    </form>
+                </div>
+
+                <div class="student-login-display" id="student-login-display">
+                    <form id="student-tag">
+                    <p>Student Login</p>
+                    <span id="student-back"><-Back to Login</span>
+                     <input type="email" placeholder="email">
+                     <input type="password" placeholder="password">
+                     <button id="student-login-btn" type="submit">Login</button> 
+                    </form>
+                </div>
+                
+          </div>
+        </div>
+   
+    
+    <script src="login.js"></script>
+</body>
+</html>
+
