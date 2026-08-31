@@ -1,6 +1,7 @@
 const addBtn = document.getElementById("addBtn")
 const allTodo = document.getElementById("all-todo")
 const activeTodo = document.getElementById("active-todo")
+const doneBtn = document.getElementById("done")
 let todoListDiv = document.getElementById("todo-list")
 
 
@@ -35,18 +36,33 @@ addBtn.addEventListener("click", () => {
         item: todoListContainer,
         isCheck: false,
     }
-
     lists.push(list)
     todoListDiv.append(todoListContainer)
 })
 
 activeTodo.addEventListener("click", () => {
-    let checkedItem = lists.filter(x => x.isCheck === true)
-    checkedItem.forEach(x => x.item.style.display = "none")
+   lists.forEach(x => {
+    if(x.isCheck === true) {
+        x.item.style.display = "none"
+    } else {
+        x.item.style.display = "block"
+    }
+   })
 })
 
 allTodo.addEventListener("click", () =>{
      lists.forEach(x => x.item.style.display = "block")
+})
+
+doneBtn.addEventListener("click", () => {
+    lists.forEach(x => {
+        if(x.isCheck === false) {
+         x.item.style.display =  "none"
+        }
+        else {
+            x.item.style.display = "block"
+        }
+})
 })
 
 
