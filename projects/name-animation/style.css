@@ -1,0 +1,15 @@
+#text {
+    font-size: 2rem;
+    color: aqua;
+    background-color:blue;
+    padding:20px
+}
+
+#text::after {
+    content: "|";
+    animation: blink 0.8s infinite
+}
+
+@keyframes blink {
+    50% {opacity: 0}
+}
