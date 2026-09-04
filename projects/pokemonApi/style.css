@@ -1,0 +1,41 @@
+
+#container {
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between
+
+}
+
+#inputSection {
+    width:auto;
+    height: 100px;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+#inputSection button{
+    padding: 5px 10px;
+    color: white;
+    background-color:orange
+}
+#pokemonName {
+    height: 25px
+}
+#info{
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+img {
+    margin: auto
+}
