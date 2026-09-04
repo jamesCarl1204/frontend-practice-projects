@@ -3,6 +3,10 @@ const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 
+let myScore = 0;
+
+let computer = 0
+
 function playGame(playerChoice) {
     const computerChoice = choices[Math.floor(Math.random() * 3)]
     let result = ""; 
@@ -23,9 +27,17 @@ function playGame(playerChoice) {
                 break
 
         }
+
+        if(result === "YOU WIN") {
+           myScore++
+        } 
+        else if(result === "YOU LOSE") {
+            computer ++
+        }
     }
-    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
-    computerDisplay.textContent = `computer: ${computerChoice}`;
+
+    playerDisplay.textContent = `PLAYER: ${playerChoice + "Score: " + myScore}`;
+    computerDisplay.textContent = `computer: ${computerChoice + "Score: " + computer}`;
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText", "yellowText")
@@ -36,6 +48,7 @@ function playGame(playerChoice) {
             break;
         case "YOU LOSE" :
             resultDisplay.classList.add("redText");
+            
             break;
         case "ITS A TIE":
             resultDisplay.classList.add("yellowText");
